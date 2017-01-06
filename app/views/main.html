@@ -1,0 +1,17 @@
+ <div ng-repeat="contacts in contactList">
+        <div class="row"  ng-if="$index % 4 == 0"></div>
+        <div class="col-sm-6 col-md-3">
+        <div class="card">
+          <div class="profile"><img ng-src="{{contacts.profile_image}}" alt="profile image"></div>
+          <div class="details">
+            <img src="{{contacts.icon}}" alt="icon" class="icon">
+            <h4>{{contacts.name}}</h4>
+            <p><span class="job-title">{{contacts.job}}</span>  <span class="company"><a href="#">{{contacts.company_name}}</a></span></p>
+              <span class="more">
+               <p class="number">Phone Number <a href="tel:{{contacts.phone}}"> {{contacts.phone}}</a></p>
+              <p class="email"><a href="mailto:{{contacts.email}}"> {{contacts.email}}</a></p>
+              </span>
+          </div>
+        </div>
+      </div>
+    </div>
