@@ -52,10 +52,13 @@ a{
 /* Custom page header */
 .header {
   background-color: #fff;
+  border-bottom: 2px solid #E7E7E7;
   .navbar{
     width:100%;
     border:none;
-    border-bottom: 2px solid #E7E7E7;
+  }
+  .container > .navbar-header{
+   margin: 0 0 15px;
   }
   .navbar-default{
     background-color: #fff;
@@ -82,7 +85,7 @@ a{
     &:after{
       font-family: FontAwesome;
       content:"\f002";
-      margin-left: -5%;
+      margin-left: -10%;
       color:#E7E7E7;
     }
   }
@@ -193,5 +196,10 @@ a{
   /* Space out the masthead */
   .header {
     margin-bottom: 30px;
-  }
+    .input-group{
+    &:after{
+      margin-left: -5%;
+      }
+    }
+  } 
 }
